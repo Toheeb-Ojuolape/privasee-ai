@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+   
+    ports:
+      - "4000:4000"
+
+    container_name: privasee-api
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    driver: bridge

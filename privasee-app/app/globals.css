@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout {
+  background: #0f031a;
+  height: 100vh;
+  overflow-y: scroll;
+}

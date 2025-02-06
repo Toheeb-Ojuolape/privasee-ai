@@ -1,0 +1,30 @@
+services:
+  frontend:
+    build:
+      context: ./privasee-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./privasee-app:/app  
+      - /app/node_modules 
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./privasee-api
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${MONGOOSE_URI}
+    volumes:
+      - ./privasee-api:/app 
+      - /app/node_modules 
+    restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge

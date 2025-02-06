@@ -20,7 +20,7 @@ The project is available for setup using Docker or using npm
 ```
 git clone https://github.com/Toheeb-Ojuolape/privasee-ai.git
 cd privasee-app
-docker-compose up 
+docker-compose up --build
 
 ```
 
@@ -36,17 +36,18 @@ npm run dev
 ```
 
 
-## Using Docker
+## For Backend
 
 **NOTE:** Please make sure to create and populate the .env file before trying to run the project
 
-### Using Docker for Frontend
+### Using npm
 
 ```
 
 git clone https://github.com/Toheeb-Ojuolape/privasee-ai.git
 cd privasee-app
-docker-compose up --build
+npm install
+npm run start
 
 ```
 

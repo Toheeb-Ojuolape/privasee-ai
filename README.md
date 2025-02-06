@@ -60,3 +60,8 @@ cd privasee-api
 docker-compose up --build
 
 ```
+
+
+
+## Note
+For best experience deploying, I would recommend running the backend first on docker, then running the frontend using npm 

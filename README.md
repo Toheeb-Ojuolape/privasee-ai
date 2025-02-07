@@ -11,6 +11,17 @@ https://www.loom.com/share/35bd455b0713407b9074d4bdf24df4d4?sid=6cce7d8d-e260-4f
 
 The project is available for setup using Docker or using npm 
 
+
+## Starting both services using Docker
+
+**NOTE:** Please make sure to set the API_URL value for the frontend to be "http://backend:4000" when using docker to start both services
+
+```
+git clone https://github.com/Toheeb-Ojuolape/privasee-ai.git
+docker-compose up --build
+
+```
+
 ## For Frontend
 
 **NOTE:** Please make sure to create and populate the .env file before trying to run the project

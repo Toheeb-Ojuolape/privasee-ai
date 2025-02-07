@@ -45,7 +45,7 @@ npm run dev
 ```
 
 git clone https://github.com/Toheeb-Ojuolape/privasee-ai.git
-cd privasee-app
+cd privasee-api
 npm install
 npm run start
 

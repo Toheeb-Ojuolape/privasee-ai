@@ -92,7 +92,7 @@ export function SigninWithEmail() {
 
   const emailAuthSchema = z.object({
     email: z.string().email({ message: "Please select a valid email." }),
-    name: z.string().min(5, "Please enter a valid name")
+    name: z.string().min(1, "Please enter a valid name")
   })
 
   type emailFormData = z.infer<typeof emailAuthSchema>
